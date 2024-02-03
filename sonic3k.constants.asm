@@ -848,7 +848,7 @@ Player_option			ds.w 1			; option selected on level select, data select screen o
 
 Kos_decomp_queue_count		ds.w 1			; the number of pieces of data on the queue. Sign bit set indicates a decompression is in progress
 Kos_decomp_stored_Wregisters	ds.w 7			; allows decompression to be spread over multiple frames
-Kos_decomp_stored_Lregisters	ds.l 6
+Kos_decomp_stored_Lregisters	ds.l 3
 Kos_decomp_stored_registers	=	Kos_decomp_stored_Wregisters
 Kos_decomp_stored_registers_End	=	*
 Kos_decomp_stored_SR		ds.w 1
