@@ -853,7 +853,6 @@ Kos_decomp_stored_registers	=	Kos_decomp_stored_Wregisters
 Kos_decomp_stored_registers_End	=	*
 Kos_decomp_stored_SR		ds.w 1
 Kos_decomp_bookmark		ds.l 1			; the address within the Kosinski queue processor at which processing is to be resumed
-Kos_description_field		ds.w 1			; used by the Kosinski queue processor the same way the stack is used by the normal Kosinski decompression routine
 Kos_decomp_queue		ds.l 2*4		; 2 longwords per entry, first is source location and second is decompression location
 Kos_decomp_queue_End =	*
 Kos_decomp_source =		Kos_decomp_queue	; long ; the compressed data location for the first entry in the queue
